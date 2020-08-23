@@ -1,0 +1,12 @@
+BasedOnStyle: Google
+IndentWidth: 4
+ColumnLimit: 100
+UseTab: Never
+Language: Cpp
+Standard: Cpp11
+ContinuationIndentWidth: 8
+AccessModifierOffset: -4
+BinPackParameters: false
+SortIncludes: true
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
