@@ -9,7 +9,6 @@ int main() {
     std::cout << "[1] ptr1 is " << ptr1.get() << std::endl;
 
     auto ptr2(ptr1);
-    std::cout << "transfering ownership to ptr2" << std::endl;
     std::cout << "[2] ptr1 is " << ptr1.get() << std::endl;
     std::cout << "[3] ptr2 is " << ptr2.get() << std::endl;
 
