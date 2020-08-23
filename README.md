@@ -1,4 +1,5 @@
 ## CUDA SMART POINTERS
+[![build:passing](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/lkoshale/cuda-smart-pointers/)
 A simple wrapper for ``` std::unique_ptr``` and ```std::shared_ptr```  for GPU on CUDA.
 
 ### How to build?
