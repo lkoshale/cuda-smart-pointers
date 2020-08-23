@@ -1,9 +1,11 @@
 ## CUDA SMART POINTERS
 [![build:passing](https://img.shields.io/badge/build-passing-brightgreen.svg)](https://github.com/lkoshale/cuda-smart-pointers/)
+
 A simple wrapper for ``` std::unique_ptr``` and ```std::shared_ptr```  for GPU on CUDA.
 
 ### How to build?
-All definitions are in a single header file ```src/memory.cuh```,  you need to include it in your project.
+All definitions are in a single header file [memory.cuh](https://github.com/lkoshale/cuda-smart-pointers/blob/master/src/memory.cuh),  you need to include it in your project.
+Test programs can be found at [src/test/](https://github.com/lkoshale/cuda-smart-pointers/tree/master/src/test).
 
 ### How to use?
 ```cpp
@@ -66,15 +68,21 @@ Requirements:
 1. CUDA and C++ (std:11)
 2. CMake (3.8+)
 #### Linux
-In the root directory of repository run:
+In the directory "cuda-smart-pointers" run:
 ```bash
 ./build.sh
 ```
 It will build the executables at ```./build/src/test/```
+To Run the test programs:
+```bash
+# in directory cuda-smart-pointers
+./build/src/test/app_name
+```
+where app_name can be any one of the following: unique, shared, unified_unique, unified_shared
 
 #### Windows with msvc and CUDA
 To Build the VS project:
-1. Open cmake-gui and point the source code to repository's root directory, and build and binaries to repository root/build.
+1. Open cmake-gui and point the source code to ".../cuda-smart-pointers", and build and binaries to repository ".../cuda-smart-pointers/build".
 2. Click "Configure"
 3. Select your **visual studio** version
 4. Click "Configure"
